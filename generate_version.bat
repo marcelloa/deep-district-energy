@@ -6,7 +6,7 @@ set "VERSION="
 for /f "delims=" %%i in ('git describe --tags --abbrev=0 2^>nul') do set "VERSION=%%i"
 
 if "%VERSION%"=="" (
-    set "VERSION=0.0.0"
+    set "VERSION=v1.0.0"
 )
 
 echo Using version: %VERSION%

@@ -13,6 +13,7 @@
 ! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 ! 
 program DEEP
+use version_module
 use district_module
 use building_complex_module
 use thermal_grid_module
@@ -29,9 +30,10 @@ double precision::time,min_timestep,max_timestep,old_time ! integration time wit
 
 ! command line arguments
 n_arguments=command_argument_count()
+write(*,*) 'DEEP ',app_version
 if (n_arguments<3)  then
 	write(*,*) 'Usage: DEEP <input_file_name> <data_file_path> <timestamp> [<hours>]'
-	stop 'Error: command line arguments'
+	stop ' Error: command line arguments'
 end if
 call get_command_argument(1,input_file_name_str)
 call get_command_argument(2,data_file_path_str)
