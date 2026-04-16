@@ -1,0 +1,183 @@
+{
+    "materials": [
+        {
+            "name": "MAT001",
+            "description": "Intercapedine 10 mm Av<500 mm2/m",
+            "lambda": 0.0,
+            "rho": 1.2,
+            "cp": 1.005,
+            "vrf": 0,
+			"resistance":0.150
+
+        },
+        {
+            "name": "MAT002",
+            "description": "Cartongesso in lastre",
+            "lambda": 0.25,
+            "rho": 900,
+            "cp": 1000,
+            "vrf": 10,
+			"resistance":0.0
+        },
+        {
+            "name": "MAT003",
+            "description": "Pannello in lana di vetro MUPAN 4+ sp 40 mm",
+            "lambda": 0.035,
+            "rho": 20,
+            "cp": 1030,
+            "vrf": 1,
+			"resistance":0.0
+        },
+        {
+            "name": "MAT004",
+            "description": "Poroton600 (sp.25)",
+            "lambda": 0.16,
+            "rho": 600,
+            "cp": 1000,
+            "vrf": 10,
+			"resistance":0.0
+        },
+        {
+            "name": "MAT005",
+            "description": "Polistirene espanso sinterizzato (alla grafite)",
+            "lambda": 0.031,
+            "rho": 20,
+            "cp": 1450,
+            "vrf": 60,
+			"resistance":0.0
+        },
+        {
+            "name": "MAT006",
+            "description": "Intonaco plastico per cappotto",
+            "lambda": 0.3,
+            "rho": 1300,
+            "cp": 840,
+            "vrf": 30,
+			"resistance":0.0
+        }
+    ],
+    "wall_slab_structures": [
+        {
+            "name": "M107",
+			"ISOclass":"D",
+			"internal_resistance":0.130,
+            "layers": [
+                {
+                    "material_name": "MAT002",
+                    "thickness": 0.013
+                },
+                {
+                    "material_name": "MAT002",
+                    "thickness": 0.013
+                },
+                {
+                    "material_name": "MAT001",
+                    "thickness": 0.01
+                },
+                {
+                    "material_name": "MAT003",
+                    "thickness": 0.04
+                },
+                {
+                    "material_name": "MAT004",
+                    "thickness": 0.25
+                },
+                {
+                    "material_name": "MAT005",
+                    "thickness": 0.16
+                },
+                {
+                    "material_name": "MAT006",
+                    "thickness": 0.01
+                }
+            ],
+			"external_resistance":0.065
+        },			
+        {
+            "name": "P100",
+			"ISOclass":"D",
+			"internal_resistance":0.170,
+            "layers": [
+                {
+                    "material_name": "MAT002",
+                    "thickness": 0.013
+                },
+                {
+                    "material_name": "MAT002",
+                    "thickness": 0.013
+                },
+                {
+                    "material_name": "MAT001",
+                    "thickness": 0.01
+                },
+                {
+                    "material_name": "MAT003",
+                    "thickness": 0.04
+                },
+                {
+                    "material_name": "MAT004",
+                    "thickness": 0.25
+                },
+                {
+                    "material_name": "MAT005",
+                    "thickness": 0.16
+                },
+                {
+                    "material_name": "MAT006",
+                    "thickness": 0.01
+                }
+            ],
+			"external_resistance":0.065
+        },
+        {
+            "name": "S102",
+			"ISOclass":"D",
+			"internal_resistance":0.065,
+            "layers": [
+                {
+                    "material_name": "MAT002",
+                    "thickness": 0.013
+                },
+                {
+                    "material_name": "MAT002",
+                    "thickness": 0.013
+                },
+                {
+                    "material_name": "MAT001",
+                    "thickness": 0.01
+                },
+                {
+                    "material_name": "MAT003",
+                    "thickness": 0.04
+                },
+                {
+                    "material_name": "MAT004",
+                    "thickness": 0.25
+                },
+                {
+                    "material_name": "MAT005",
+                    "thickness": 0.16
+                },
+                {
+                    "material_name": "MAT006",
+                    "thickness": 0.01
+                }
+            ],
+			"external_resistance":0.100
+        }
+    ],
+	"window_structures":[
+		{
+			"name":"W001",
+			"description": "triple-glazing",
+			"Ug": 1.26,
+			"gn": 0.6,
+			"Uf": 1,
+			"Htb": 0.25,
+			"Ff": 0.2,
+			"Fw": 0.9,
+			"internal_resistance":0.130,
+			"external_resistance":0.065
+		}
+	]
+}

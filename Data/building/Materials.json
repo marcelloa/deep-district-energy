@@ -1,0 +1,57 @@
+[
+	{
+		"name": "MAT001",
+		"description": "Intercapedine 10 mm Av<500 mm2/m",
+		"lambda": 0.0,
+		"rho": 1.2,
+		"cp": 1.005,
+		"vrf": 0,
+		"resistance":0.150
+
+	},
+	{
+		"name": "MAT002",
+		"description": "Cartongesso in lastre",
+		"lambda": 0.25,
+		"rho": 900,
+		"cp": 1000,
+		"vrf": 10,
+		"resistance":0.0
+	},
+	{
+		"name": "MAT003",
+		"description": "Pannello in lana di vetro MUPAN 4+ sp 40 mm",
+		"lambda": 0.035,
+		"rho": 20,
+		"cp": 1030,
+		"vrf": 1,
+		"resistance":0.0
+	},
+	{
+		"name": "MAT004",
+		"description": "Poroton600 (sp.25)",
+		"lambda": 0.16,
+		"rho": 600,
+		"cp": 1000,
+		"vrf": 10,
+		"resistance":0.0
+	},
+	{
+		"name": "MAT005",
+		"description": "Polistirene espanso sinterizzato (alla grafite)",
+		"lambda": 0.031,
+		"rho": 20,
+		"cp": 1450,
+		"vrf": 60,
+		"resistance":0.0
+	},
+	{
+		"name": "MAT006",
+		"description": "Intonaco plastico per cappotto",
+		"lambda": 0.3,
+		"rho": 1300,
+		"cp": 840,
+		"vrf": 30,
+		"resistance":0.0
+	}
+]

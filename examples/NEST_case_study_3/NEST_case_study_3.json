@@ -1,0 +1,1083 @@
+{
+    "name": "NEST_case_study_2",
+    "scheduler": [
+        {
+            "id": 1,
+            "step": "Shadows on buildings",
+            "timestamp": "14/04/2026 00:42:42",
+            "execute": true
+        },
+        {
+            "id": 2,
+            "step": "Building energy needs",
+            "timestamp": "14/04/2026 00:42:42",
+            "execute": true
+        },
+        {
+            "id": 3,
+            "step": "Building energy inputs",
+            "timestamp": "14/04/2026 00:42:42",
+            "execute": true
+        },
+        {
+            "id": 4,
+            "step": "Thermal network demand",
+            "timestamp": "14/04/2026 00:16:01",
+            "execute": true
+        }
+    ],
+    "position": {
+        "latitude": 45.51629,
+        "longitude": 9.22026
+    },
+    "multi_year": true,
+    "years": [
+        2025,
+        2026,
+		2027,
+		2028,
+		2029,
+		2030,
+		2031,
+		2032,
+		2033,
+		2034
+    ],
+    "meteofile": "meteo/Milano_1990.tm2",
+    "materials": "building/Materials.json",
+    "structures": "building/Building_structures.json",
+    "schedules": "building/Building_schedules.json",
+    "buildings": [
+        {
+            "name": "B3",
+            "X": [
+                50.8,
+                126.1,
+                134.5,
+                115.4,
+                110.5,
+                54.2,
+                50.8
+            ],
+            "Y": [
+                -9.6,
+                -24.7,
+                18.1,
+                22.2,
+                -4.2,
+                7.4,
+                -9.6
+            ],
+            "floors_ag": 5,
+            "floors_bg": 1,
+            "height_ag": 15,
+            "height_bg": 3,
+            "units": [
+                {
+                    "name": "Dormitory",
+                    "floor_start": 2,
+                    "floor_end": 5,
+                    "footprint_to_gross_area": 1,
+                    "gross_to_heated_area": 0.7,
+                    "heated_to_useful_area": 0.8,
+                    "window_to_useful_area": 0.12,
+                    "window_to_segment": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "wall_is_adiabatic": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "floor_start_type": "heated",
+                    "floor_end_type": "roof",
+                    "name_slab_basement": "S102",
+                    "name_slabs_interfloor": "S102",
+                    "name_roof": "S102",
+                    "name_walls": "M107",
+                    "name_windows": "W001",
+                    "linear_thermal_bridge": 0.3,
+                    "min_RH": 0.25,
+                    "max_RH": 0.5,
+                    "schedule_ventilation": "ventilation",
+                    "schedule_occupancy": "occupancy",
+                    "schedule_appliances": "appliances",
+                    "schedule_power_available": "DEFAULT",
+                    "schedule_internal_gain": "DEFAULT",
+                    "schedule_dhw": "dhw",
+                    "schedule_heating_setpoint": "heating_setpoint",
+                    "schedule_cooling_setpoint": "cooling_mild_setpoint",
+                    "ventilation_rate": 0.4,
+                    "crowd_density": 0.04,
+                    "power_density": 4,
+                    "dhw_use": 50,
+                    "blinds_G": 300,
+                    "blinds_b": 0.37,
+                    "hvac_type": 1,
+                    "Q_h_specific": 50,
+                    "Q_c_specific": 50,
+                    "dhw_type": 1,
+                    "emission_efficiency": 0.98,
+                    "control_efficiency": 0.98,
+                    "distribution_efficiency": 0.96,
+                    "distribution_volumetric_efficiency": 0.95,
+                    "heat_recovery_effectiveness": 0.6,
+                    "maximum_airvolume_changes": 5,
+                    "average_flat_area": 75,
+                    "dhw_peak_flow": 600,
+                    "dhw_peak_duration": 2,
+                    "dhw_preheating": 3,
+                    "water_main_temperature": 10,
+                    "dhw_storage_temperature": 60
+                }
+            ]
+        },
+        {
+            "name": "B2",
+            "X": [
+                123,
+                117.6,
+                136.9,
+                146,
+                70.5,
+                67.4,
+                123
+            ],
+            "Y": [
+                57.8,
+                29.9,
+                25.4,
+                69,
+                85.2,
+                70.3,
+                57.8
+            ],
+            "floors_ag": 5,
+            "floors_bg": 1,
+            "height_ag": 15,
+            "height_bg": 3,
+            "units": [
+                {
+                    "name": "Dormitory",
+                    "floor_start": 2,
+                    "floor_end": 5,
+                    "footprint_to_gross_area": 1,
+                    "gross_to_heated_area": 0.7,
+                    "heated_to_useful_area": 0.8,
+                    "window_to_useful_area": 0.12,
+                    "window_to_segment": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "wall_is_adiabatic": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "floor_start_type": "heated",
+                    "floor_end_type": "roof",
+                    "name_slab_basement": "S102",
+                    "name_slabs_interfloor": "S102",
+                    "name_roof": "S102",
+                    "name_walls": "M107",
+                    "name_windows": "W001",
+                    "linear_thermal_bridge": 0.3,
+                    "min_RH": 0.25,
+                    "max_RH": 0.5,
+                    "schedule_ventilation": "ventilation",
+                    "schedule_occupancy": "occupancy",
+                    "schedule_appliances": "appliances",
+                    "schedule_power_available": "DEFAULT",
+                    "schedule_internal_gain": "DEFAULT",
+                    "schedule_dhw": "dhw",
+                    "schedule_heating_setpoint": "heating_setpoint",
+                    "schedule_cooling_setpoint": "cooling_mild_setpoint",
+                    "ventilation_rate": 0.4,
+                    "crowd_density": 0.04,
+                    "power_density": 4,
+                    "dhw_use": 50,
+                    "blinds_G": 300,
+                    "blinds_b": 0.37,
+                    "hvac_type": 1,
+                    "Q_h_specific": 50,
+                    "Q_c_specific": 50,
+                    "dhw_type": 1,
+                    "emission_efficiency": 0.98,
+                    "control_efficiency": 0.98,
+                    "distribution_efficiency": 0.96,
+                    "distribution_volumetric_efficiency": 0.95,
+                    "heat_recovery_effectiveness": 0.6,
+                    "maximum_airvolume_changes": 5,
+                    "average_flat_area": 75,
+                    "dhw_peak_flow": 600,
+                    "dhw_peak_duration": 2,
+                    "dhw_preheating": 3,
+                    "water_main_temperature": 10,
+                    "dhw_storage_temperature": 60
+                }
+            ]
+        },
+        {
+            "name": "B1",
+            "X": [
+                6.1,
+                41,
+                51.2,
+                35.7,
+                29,
+                9.3,
+                6.1
+            ],
+            "Y": [
+                -0.7,
+                -8,
+                36.1,
+                39,
+                11.9,
+                12.4,
+                -0.7
+            ],
+            "floors_ag": 5,
+            "floors_bg": 1,
+            "height_ag": 15,
+            "height_bg": 3,
+            "units": [
+                {
+                    "name": "Residential",
+                    "floor_start": 2,
+                    "floor_end": 5,
+                    "footprint_to_gross_area": 1,
+                    "gross_to_heated_area": 0.7,
+                    "heated_to_useful_area": 0.8,
+                    "window_to_useful_area": 0.12,
+                    "window_to_segment": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "wall_is_adiabatic": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "floor_start_type": "heated",
+                    "floor_end_type": "roof",
+                    "name_slab_basement": "S102",
+                    "name_slabs_interfloor": "S102",
+                    "name_roof": "S102",
+                    "name_walls": "M107",
+                    "name_windows": "W001",
+                    "linear_thermal_bridge": 0.3,
+                    "min_RH": 0.25,
+                    "max_RH": 0.5,
+                    "schedule_ventilation": "ventilation",
+                    "schedule_occupancy": "occupancy",
+                    "schedule_appliances": "appliances",
+                    "schedule_power_available": "DEFAULT",
+                    "schedule_internal_gain": "DEFAULT",
+                    "schedule_dhw": "dhw",
+                    "schedule_heating_setpoint": "heating_setpoint",
+                    "schedule_cooling_setpoint": "cooling_mild_setpoint",
+                    "ventilation_rate": 0.4,
+                    "crowd_density": 0.04,
+                    "power_density": 4,
+                    "dhw_use": 50,
+                    "blinds_G": 300,
+                    "blinds_b": 0.37,
+                    "hvac_type": 1,
+                    "Q_h_specific": 50,
+                    "Q_c_specific": 50,
+                    "dhw_type": 1,
+                    "emission_efficiency": 0.98,
+                    "control_efficiency": 0.98,
+                    "distribution_efficiency": 0.96,
+                    "distribution_volumetric_efficiency": 0.95,
+                    "heat_recovery_effectiveness": 0.6,
+                    "maximum_airvolume_changes": 5,
+                    "average_flat_area": 75,
+                    "dhw_peak_flow": 600,
+                    "dhw_peak_duration": 2,
+                    "dhw_preheating": 3,
+                    "water_main_temperature": 10,
+                    "dhw_storage_temperature": 60
+                }
+            ]
+        }
+    ],
+    "neighbors": [
+        {
+            "name": "way/332691589",
+            "X": [
+                187.4,
+                197.1,
+                199,
+                191.1,
+                193.6,
+                166.4,
+                150.9,
+                187.4
+            ],
+            "Y": [
+                -67.5,
+                -20.4,
+                -11.7,
+                -10,
+                1.9,
+                7.6,
+                -65.2,
+                -67.5
+            ],
+            "height_ag": 6
+        },
+        {
+            "name": "way/351704296",
+            "X": [
+                169.4,
+                271.1,
+                273.7,
+                274.5,
+                268.6,
+                243.9,
+                172.8,
+                169.4
+            ],
+            "Y": [
+                20.1,
+                -1.9,
+                9.9,
+                13.6,
+                14.9,
+                20.2,
+                35.6,
+                20.1
+            ],
+            "height_ag": 9
+        },
+        {
+            "name": "way/369593198",
+            "X": [
+                -48,
+                -53.3,
+                -18.7,
+                0.6,
+                16,
+                34.8,
+                40,
+                -48
+            ],
+            "Y": [
+                -3.3,
+                -27.5,
+                -37.9,
+                -41.9,
+                -45,
+                -48.9,
+                -22.3,
+                -3.3
+            ],
+            "height_ag": 15
+        }
+    ],
+    "thermal_grids": [
+        {
+            "double_connections": [
+                {
+                    "name": "connection0",
+                    "P0": [
+                        75.2,
+                        32.2,
+                        -1
+                    ]
+                }
+            ],
+            "double_pipes": [
+                {
+                    "name": "pipe3",
+                    "path": [
+                        [
+                            75.2,
+                            32.2,
+                            -1
+                        ],
+                        [
+                            45.7,
+                            38.7,
+                            -1
+                        ]
+                    ],
+                    "D_int": 150,
+                    "thickness": 2,
+                    "ins_lambda": 0.04,
+                    "ins_delta": 50,
+                    "eps": 0.2,
+                    "K": 0
+                },
+                {
+                    "name": "pipe0",
+                    "path": [
+                        [
+                            99.8,
+                            42.4,
+                            -1
+                        ],
+                        [
+                            75.2,
+                            32.2,
+                            -1
+                        ]
+                    ],
+                    "D_int": 150,
+                    "thickness": 2,
+                    "ins_lambda": 0.04,
+                    "ins_delta": 50,
+                    "eps": 0.2,
+                    "K": 0
+                },
+                {
+                    "name": "pipe1",
+                    "path": [
+                        [
+                            82.5,
+                            64.8,
+                            -1
+                        ],
+                        [
+                            75.2,
+                            32.2,
+                            -1
+                        ]
+                    ],
+                    "D_int": 150,
+                    "thickness": 2,
+                    "ins_lambda": 0.04,
+                    "ins_delta": 50,
+                    "eps": 0.2,
+                    "K": 0
+                },
+                {
+                    "name": "pipe2",
+                    "path": [
+                        [
+                            75.2,
+                            32.2,
+                            -1
+                        ],
+                        [
+                            69.5,
+                            6.2,
+                            -1
+                        ]
+                    ],
+                    "D_int": 150,
+                    "thickness": 2,
+                    "ins_lambda": 0.04,
+                    "ins_delta": 50,
+                    "eps": 0.2,
+                    "K": 0
+                }
+            ],
+            "substations": [
+                {
+                    "name": "S1",
+                    "type_sub": "S001",
+                    "P0": [
+                        45.7,
+                        38.7,
+                        -1
+                    ],
+                    "building_units": "B1(1)",
+                    "parameters": [
+                        {
+                            "name": "T_grid_h_min",
+                            "val_dbl": 2
+                        },
+                        {
+                            "name": "T_grid_c_max",
+                            "val_dbl": 25
+                        },                       
+                        {
+                            "name": "pipe_heat_pump.D",
+                            "val_dbl": 0.08
+                        },
+                        {
+                            "name": "pipe_heat_pump.L",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "pipe_heat_pump.K",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pipe_heat_pump.eps",
+                            "val_dbl": 0.02
+                        },
+                        {
+                            "name": "pipe_heat_pump.ins_delta",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "pipe_heat_pump.ins_lambda",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "HX_heat_pump.DP_nom",
+                            "val_dbl": 10000
+                        },
+                        {
+                            "name": "HX_heat_pump.m_nom",
+                            "val_dbl": 5
+                        },
+                        {
+                            "name": "HX_heat_pump.Q_nom",
+                            "val_dbl": 100000
+                        },
+                        {
+                            "name": "HX_cooling.DP_nom",
+                            "val_dbl": 10000
+                        },
+                        {
+                            "name": "HX_cooling.m_nom",
+                            "val_dbl": 5
+                        },
+                        {
+                            "name": "HX_cooling.Q_nom",
+                            "val_dbl": 200000
+                        },
+                        {
+                            "name": "pump_heat_pump.a1",
+                            "val_dbl": -2
+                        },
+                        {
+                            "name": "pump_heat_pump.a2",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pump_heat_pump.a3",
+                            "val_dbl": 0.9
+                        },
+                        {
+                            "name": "pump_cooling.a1",
+                            "val_dbl": -2
+                        },
+                        {
+                            "name": "pump_cooling.a2",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pump_cooling.a3",
+                            "val_dbl": 0.9
+                        },
+                        {
+                            "name": "pipe_cooling.D",
+                            "val_dbl": 0.08
+                        },
+                        {
+                            "name": "pipe_cooling.L",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "pipe_cooling.K",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pipe_cooling.eps",
+                            "val_dbl": 0.02
+                        },
+                        {
+                            "name": "pipe_cooling.ins_delta",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "pipe_cooling.ins_lambda",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "HP.Q_heat_nom",
+                            "val_dbl": 100000
+                        },
+                        {
+                            "name": "HP.COP_nom",
+                            "val_dbl": 4
+                        },
+                        {
+                            "name": "HP.T_hwo_nom",
+                            "val_dbl": 50
+                        },
+                        {
+                            "name": "HP.T_cwo_nom",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "HP.W_standby",
+                            "val_dbl": 15
+                        },
+                        {
+                            "name": "HP.model_type",
+                            "val_int": 1
+                        },
+                        {
+                            "name": "HP.model_par",
+                            "arr_dbl": [
+                                3,
+                                0,
+                                1.15,
+                                0.78,
+                                0.118,
+                                0.874
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "S2",
+                    "type_sub": "S001",
+                    "P0": [
+                        82.5,
+                        64.8,
+                        -1
+                    ],
+                    "building_units": "B2(1)",
+                    "parameters": [
+                        {
+                            "name": "T_grid_h_min",
+                            "val_dbl": 2
+                        },
+                        {
+                            "name": "T_grid_c_max",
+                            "val_dbl": 25
+                        },
+						{	
+                            "name": "pipe_heat_pump.D",
+                            "val_dbl": 0.08
+                        },
+                        {
+                            "name": "pipe_heat_pump.L",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "pipe_heat_pump.K",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pipe_heat_pump.eps",
+                            "val_dbl": 0.02
+                        },
+                        {
+                            "name": "pipe_heat_pump.ins_delta",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "pipe_heat_pump.ins_lambda",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "HX_heat_pump.DP_nom",
+                            "val_dbl": 10000
+                        },
+                        {
+                            "name": "HX_heat_pump.m_nom",
+                            "val_dbl": 5
+                        },
+                        {
+                            "name": "HX_heat_pump.Q_nom",
+                            "val_dbl": 150000
+                        },
+                        {
+                            "name": "HX_cooling.DP_nom",
+                            "val_dbl": 10000
+                        },
+                        {
+                            "name": "HX_cooling.m_nom",
+                            "val_dbl": 5
+                        },
+                        {
+                            "name": "HX_cooling.Q_nom",
+                            "val_dbl": 200000
+                        },
+                        {
+                            "name": "pump_heat_pump.a1",
+                            "val_dbl": -2
+                        },
+                        {
+                            "name": "pump_heat_pump.a2",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pump_heat_pump.a3",
+                            "val_dbl": 0.9
+                        },
+                        {
+                            "name": "pump_cooling.a1",
+                            "val_dbl": -2
+                        },
+                        {
+                            "name": "pump_cooling.a2",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pump_cooling.a3",
+                            "val_dbl": 0.9
+                        },
+                        {
+                            "name": "pipe_cooling.D",
+                            "val_dbl": 0.08
+                        },
+                        {
+                            "name": "pipe_cooling.L",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "pipe_cooling.K",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pipe_cooling.eps",
+                            "val_dbl": 0.02
+                        },
+                        {
+                            "name": "pipe_cooling.ins_delta",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "pipe_cooling.ins_lambda",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "HP.Q_heat_nom",
+                            "val_dbl": 150000
+                        },
+                        {
+                            "name": "HP.COP_nom",
+                            "val_dbl": 4
+                        },
+                        {
+                            "name": "HP.T_hwo_nom",
+                            "val_dbl": 50
+                        },
+                        {
+                            "name": "HP.T_cwo_nom",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "HP.W_standby",
+                            "val_dbl": 15
+                        },
+                        {
+                            "name": "HP.model_type",
+                            "val_int": 1
+                        },
+                        {
+                            "name": "HP.model_par",
+                            "arr_dbl": [
+                                3,
+                                0,
+                                1.15,
+                                0.78,
+                                0.118,
+                                0.874
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "S3",
+                    "type_sub": "S001",
+                    "P0": [
+                        69.5,
+                        6.2,
+                        -1
+                    ],
+                    "building_units": "B3(1)",
+                    "parameters": [
+                        {
+                            "name": "T_grid_h_min",
+                            "val_dbl": 2
+                        },
+                        {
+                            "name": "T_grid_c_max",
+                            "val_dbl": 25
+                        },
+                        {
+                            "name": "pipe_heat_pump.D",
+                            "val_dbl": 0.08
+                        },
+                        {
+                            "name": "pipe_heat_pump.L",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "pipe_heat_pump.K",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pipe_heat_pump.eps",
+                            "val_dbl": 0.02
+                        },
+                        {
+                            "name": "pipe_heat_pump.ins_delta",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "pipe_heat_pump.ins_lambda",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "HX_heat_pump.DP_nom",
+                            "val_dbl": 10000
+                        },
+                        {
+                            "name": "HX_heat_pump.m_nom",
+                            "val_dbl": 5
+                        },
+                        {
+                            "name": "HX_heat_pump.Q_nom",
+                            "val_dbl": 150000
+                        },
+                        {
+                            "name": "HX_cooling.DP_nom",
+                            "val_dbl": 10000
+                        },
+                        {
+                            "name": "HX_cooling.m_nom",
+                            "val_dbl": 5
+                        },
+                        {
+                            "name": "HX_cooling.Q_nom",
+                            "val_dbl": 200000
+                        },
+                        {
+                            "name": "pump_heat_pump.a1",
+                            "val_dbl": -2
+                        },
+                        {
+                            "name": "pump_heat_pump.a2",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pump_heat_pump.a3",
+                            "val_dbl": 0.9
+                        },
+                        {
+                            "name": "pump_cooling.a1",
+                            "val_dbl": -2
+                        },
+                        {
+                            "name": "pump_cooling.a2",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pump_cooling.a3",
+                            "val_dbl": 0.9
+                        },
+                        {
+                            "name": "pipe_cooling.D",
+                            "val_dbl": 0.08
+                        },
+                        {
+                            "name": "pipe_cooling.L",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "pipe_cooling.K",
+                            "val_dbl": 0
+                        },
+                        {
+                            "name": "pipe_cooling.eps",
+                            "val_dbl": 0.02
+                        },
+                        {
+                            "name": "pipe_cooling.ins_delta",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "pipe_cooling.ins_lambda",
+                            "val_dbl": 0.04
+                        },
+                        {
+                            "name": "HP.Q_heat_nom",
+                            "val_dbl": 150000
+                        },
+                        {
+                            "name": "HP.COP_nom",
+                            "val_dbl": 4
+                        },
+                        {
+                            "name": "HP.T_hwo_nom",
+                            "val_dbl": 50
+                        },
+                        {
+                            "name": "HP.T_cwo_nom",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "HP.W_standby",
+                            "val_dbl": 15
+                        },
+                        {
+                            "name": "HP.model_type",
+                            "val_int": 1
+                        },
+                        {
+                            "name": "HP.model_par",
+                            "arr_dbl": [
+                                3,
+                                0,
+                                1.15,
+                                0.78,
+                                0.118,
+                                0.874
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "energy_centres": [
+                {
+                    "name": "EC",
+                    "type_centre": "C002",
+                    "P0": [
+                        99.8,
+                        42.4,
+                        -1
+                    ],
+                    "parameters": [
+                        {
+                            "name": "bhe_field.DP_nom",
+                            "val_dbl": 3000
+                        },
+                        {
+                            "name": "bhe_field.m_nom",
+                            "val_dbl": 10
+                        },
+                        {
+                            "name": "bhe_field.bhe.bhe_XY_coordinates",
+                            "mat_dbl": [
+                                [
+                                    0,
+                                    0
+                                ],
+                                [
+                                    10,
+                                    0
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "bhe_field.bhe.N_bhe",
+                            "val_int": 2
+                        },
+                        {
+                            "name": "bhe_field.bhe.layout_mode",
+                            "val_int": 2
+                        },
+                        {
+                            "name": "bhe_field.bhe.bhe_type",
+                            "val_int": 2
+                        },
+                        {
+                            "name": "bhe_field.bhe.D_bhe",
+                            "val_dbl": 0.15
+                        },
+                        {
+                            "name": "bhe_field.bhe.H",
+                            "val_dbl": 100
+                        },
+                        {
+                            "name": "bhe_field.bhe.D_p",
+                            "val_dbl": 0.032
+                        },
+                        {
+                            "name": "bhe_field.bhe.s_p",
+                            "val_dbl": 0.003
+                        },
+                        {
+                            "name": "bhe_field.bhe.D",
+                            "val_dbl": 0.0452
+                        },
+                        {
+                            "name": "bhe_field.bhe.lambda_p",
+                            "val_dbl": 0.35
+                        },
+                        {
+                            "name": "bhe_field.bhe.lambda_grout",
+                            "val_dbl": 1.7
+                        },
+                        {
+                            "name": "bhe_field.bhe.lambda",
+                            "val_dbl": 1.7
+                        },
+                        {
+                            "name": "bhe_field.bhe.C",
+                            "val_dbl": 2500000
+                        },
+                        {
+                            "name": "bhe_field.bhe.Q_ghd",
+                            "val_dbl": 250000
+                        },
+                        {
+                            "name": "bhe_field.bhe.Q_gcd",
+                            "val_dbl": -250000
+                        },
+                        {
+                            "name": "bhe_field.bhe.Q_ghm",
+                            "val_dbl": 120000
+                        },
+                        {
+                            "name": "bhe_field.bhe.Q_gcm",
+                            "val_dbl": -110000
+                        },
+                        {
+                            "name": "bhe_field.bhe.Q_ga",
+                            "val_dbl": 27000
+                        },
+                        {
+                            "name": "bhe_field.bhe.B_des",
+                            "val_dbl": 7
+                        },
+                        {
+                            "name": "bhe_field.bhe.H_des",
+                            "val_dbl": 200
+                        },
+                        {
+                            "name": "bhe_field.bhe.T_fih_design",
+                            "val_dbl": 2
+                        },
+                        {
+                            "name": "bhe_field.bhe.T_foh_design",
+                            "val_dbl": 6
+                        },
+                        {
+                            "name": "bhe_field.bhe.T_fic_design",
+                            "val_dbl": 22
+                        },
+                        {
+                            "name": "bhe_field.bhe.T_foc_design",
+                            "val_dbl": 18
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
